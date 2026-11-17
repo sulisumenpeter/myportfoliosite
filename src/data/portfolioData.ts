@@ -214,7 +214,23 @@ export const PROJECTS: Project[] = [
       { label: "Speed", value: "Groq Llama 3 (500+ tps)" },
       { label: "Orchestration", value: "n8n Workflows" },
       { label: "Scraping", value: "Apify Integration" }
-    ]
+    ],
+    schemaPayload: {
+      workflow_id: "WF_JOB_HUNTER_GROQ",
+      trigger: "apify_webhook_linkedin_engineering",
+      candidate_profile: "Sulisumen Peter (AI Systems Engineer)",
+      job_posting: {
+        role: "Senior AI Agent Architect",
+        requirements: ["LangGraph", "FastAPI", "Multi-Agent Orchestration", "Python"]
+      },
+      semantic_match_score: 94.8,
+      groq_inference: {
+        model: "llama-3.3-70b-versatile",
+        latency_ms: 190,
+        tailored_highlights: ["RedTeam AI Labs", "MCP Orchestration", "10+ Yrs IT Systems"],
+        draft_dispatch_status: "QUEUED_AIRTABLE"
+      }
+    }
   },
   {
     slug: "homeops-ai",
@@ -253,7 +269,20 @@ export const PROJECTS: Project[] = [
       { label: "Protocol", value: "MCP Streamable HTTP" },
       { label: "Planner", value: "Gemini 1.5 Pro" },
       { label: "Storage", value: "Local SQLite State" }
-    ]
+    ],
+    schemaPayload: {
+      mcp_session_id: "mcp_sess_4821a",
+      natural_language_intent: "Configure studio for 3-hour deep engineering sprint.",
+      gemini_planner: {
+        plan_id: "PLAN_FOCUS_STATE_03",
+        steps: [
+          { tool: "mcp_streamable_lights.set_scene", params: { brightness: 0.40, temp_k: 3200 } },
+          { tool: "mcp_streamable_hvac.set_thermostat", params: { target_celsius: 21.5 } },
+          { tool: "mcp_streamable_network.prioritize_vlan", params: { vlan_id: 10, qos: "high" } }
+        ]
+      },
+      sqlite_telemetry: { state_committed: true, energy_kwh_delta: -0.14 }
+    }
   },
   {
     slug: "ai-crm-integration-assistant",
@@ -292,7 +321,25 @@ export const PROJECTS: Project[] = [
       { label: "Orchestration", value: "Make Automation" },
       { label: "AI Brain", value: "Google Gemini" },
       { label: "Integration", value: "Airtable + Webhooks" }
-    ]
+    ],
+    schemaPayload: {
+      inbound_lead: {
+        name: "David Sterling",
+        company: "Enterprise Logistics UK",
+        message: "We have 40 operations staff spending 15 hrs/wk matching delivery manifests manually."
+      },
+      gemini_enrichment: {
+        icp_fit: "TIER_1_ENTERPRISE",
+        urgency: "HIGH",
+        automation_opportunity: "Dispatch & Manifest OCR Pipeline",
+        estimated_annual_roi: "$85,000+"
+      },
+      actions_taken: [
+        "Airtable record created (#LEAD-4821)",
+        "Synced to Executive Google Sheet",
+        "Slack notification sent to #sales-priority"
+      ]
+    }
   },
   {
     slug: "markflow",
